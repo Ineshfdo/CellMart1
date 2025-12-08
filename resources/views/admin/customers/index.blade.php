@@ -25,7 +25,6 @@
                 <table class="w-full text-left text-sm text-gray-600 dark:text-gray-300">
                     <thead class="bg-gray-50 dark:bg-zinc-900/50 text-xs uppercase font-semibold text-gray-900 dark:text-white">
                         <tr>
-                            <th class="px-6 py-4">Customer ID</th>
                             <th class="px-6 py-4">Customer Name</th>
                             <th class="px-6 py-4">Email</th>
                             <th class="px-6 py-4">Registered Date</th>
@@ -35,7 +34,6 @@
                     <tbody class="divide-y divide-gray-100 dark:divide-zinc-700">
                         @forelse($customers as $customer)
                         <tr class="hover:bg-gray-50 dark:hover:bg-zinc-700/50 transition-colors">
-                            <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $customer->id }}</td>
                             <td class="px-6 py-4">{{ $customer->name }}</td>
                             <td class="px-6 py-4">{{ $customer->email }}</td>
                             <td class="px-6 py-4">{{ $customer->created_at->format('Y-m-d H:i:s') }}</td>
